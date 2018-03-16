@@ -1,0 +1,12 @@
+E:\Works\CRM\FRC.ProductConfiguration\FRC.ProductConfiguration.DataAccess\bin\Release\FRC.ProductConfiguration.DataAccess.dll.config
+E:\Works\CRM\FRC.ProductConfiguration\FRC.ProductConfiguration.DataAccess\bin\Release\FRC.ProductConfiguration.DataAccess.dll
+E:\Works\CRM\FRC.ProductConfiguration\FRC.ProductConfiguration.DataAccess\bin\Release\FRC.ProductConfiguration.DataAccess.pdb
+E:\Works\CRM\FRC.ProductConfiguration\FRC.ProductConfiguration.DataAccess\bin\Release\EntityFramework.dll
+E:\Works\CRM\FRC.ProductConfiguration\FRC.ProductConfiguration.DataAccess\bin\Release\EntityFramework.SqlServer.dll
+E:\Works\CRM\FRC.ProductConfiguration\FRC.ProductConfiguration.DataAccess\bin\Release\FRC.ProductConfiguration.Entities.dll
+E:\Works\CRM\FRC.ProductConfiguration\FRC.ProductConfiguration.DataAccess\bin\Release\FRC.ProductConfiguration.Entities.pdb
+E:\Works\CRM\FRC.ProductConfiguration\FRC.ProductConfiguration.DataAccess\bin\Release\EntityFramework.xml
+E:\Works\CRM\FRC.ProductConfiguration\FRC.ProductConfiguration.DataAccess\bin\Release\EntityFramework.SqlServer.xml
+E:\Works\CRM\FRC.ProductConfiguration\FRC.ProductConfiguration.DataAccess\obj\Release\FRC.ProductConfiguration.DataAccess.csprojResolveAssemblyReference.cache
+E:\Works\CRM\FRC.ProductConfiguration\FRC.ProductConfiguration.DataAccess\obj\Release\FRC.ProductConfiguration.DataAccess.dll
+E:\Works\CRM\FRC.ProductConfiguration\FRC.ProductConfiguration.DataAccess\obj\Release\FRC.ProductConfiguration.DataAccess.pdb

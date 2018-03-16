@@ -1,0 +1,38 @@
+<!-- <div class="navbar navbar-inverse bg-inverse navbar-static-top" style="margin-bottom:0;">
+    <a class="navbar-brand">SPORTS STORE</a>
+    <div *myUnless="value" class="pull-right" style="margin-right: 10px;">
+        <h3><i class="fa fa-shopping-cart"></i>&nbsp;{{value}}</h3>
+    </div>
+</div>
+<div class="col-xs-3 bg-info" style="padding:10px 30px;">
+    <button class="btn btn-block btn-primary" [class.active]="!selectedCategory" (click)="categoryChange()">
+            Home
+    </button>
+    <button *ngFor="let category of categoryList" class="btn btn-primary btn-block" [class.active]="category == selectedCategory"
+        (click)="categoryChange(category)">
+    {{category.name}}
+    </button>
+    <button class="btn btn-block btn-danger" routerLink="/admin">
+        Admin
+    </button>
+    <button class="btn btn-block btn-info" routerLink="/admin/grid">
+        Grids
+    </button>
+</div>
+<div class="col-xs-9 bg-success" style="padding:5px 50px 10px 30px;">
+    <div *ngFor="let product of productList">
+        <h4>
+            {{product.name}}
+            <span class="pull-right">
+                {{product.price | currency:"USD":true:"2.2-2"}}
+            </span>
+        </h4>
+        <div>
+            {{product.description}}
+            <button class="btn btn-success btn-sm pull-right" (click)="addProductToCart(product)">
+                Add To Cart
+            </button>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div> -->

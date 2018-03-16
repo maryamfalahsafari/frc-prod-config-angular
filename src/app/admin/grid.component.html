@@ -1,0 +1,65 @@
+<!-- <my-sizer [(size)]="fontSizePx"></my-sizer>
+<div [style.font-size.px]="fontSizePx">Resizable Text</div> -->
+<div class="container-fluid">
+    <div class="row" style="margin-bottom: 10px;">
+        <input type="button" (click)="login()"  value="LOGIN"/>
+        <div class="col-md-12">
+            <div class="container-fluid">
+                <div class="row tab-header">
+                    <div class="col-md-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-2 center-text">
+                                    <button type="button" [ngClass]="selectedTab=='FXTRFALLDAY'?'active':''" (click)="selectTab('FXTRFALLDAY')">FXTRFALLDAY</button>
+                                </div>
+                                <div class="col-md-2 center-text">
+                                    <button type="button" [ngClass]="selectedTab=='DOTPALLDAY'?'active':''" (click)="selectTab('DOTPALLDAY')">DOTPALLDAY</button>
+                                </div>
+                                <div class="col-md-2 center-text">
+                                    <button type="button" [ngClass]="selectedTab=='DOTALLDAY'?'active':''" (click)="selectTab('DOTALLDAY')">DOTDALLDAY</button>
+                                </div>
+                                <div class="col-md-2 center-text">
+                                    <button type="button" [ngClass]="selectedTab=='FXTRF2TIER'?'active':''" (click)="selectTab('FXTRF2TIER')">FXTRF2TIER</button>
+                                </div>
+                                <div class="col-md-2 center-text">
+                                    <button type="button" [ngClass]="selectedTab=='DOTP2TIER'?'active':''" (click)="selectTab('DOTP2TIER')">DOTP2TIER</button>
+                                </div>
+                                <div class="col-md-2 center-text">
+                                    <button type="button" [ngClass]="selectedTab=='DOT2TIER'?'active':''" (click)="selectTab('DOT2TIER')">DOT2TIER</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row tab-body">
+                    <div class="col-md-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <FXTRFALLDAY-component [showing]="FXTRFALLDAYShowing"></FXTRFALLDAY-component>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <DOTPALLDAY-component [showing]="DOTPALLDAYShowing"></DOTPALLDAY-component>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <DOTALLDAY-component [showing]="DOTALLDAYShowing"></DOTALLDAY-component>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <FXTRF2TIER-component [showing]="FXTRF2TIERShowing"></FXTRF2TIER-component>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <DOTP2TIER-component [showing]="DOTP2TIERShowing"></DOTP2TIER-component>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <DOT2TIER-component [showing]="DOT2TIERShowing"></DOT2TIER-component>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

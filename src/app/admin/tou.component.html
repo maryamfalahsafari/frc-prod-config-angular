@@ -1,0 +1,309 @@
+<div class="container-fluid">
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-md-12">
+            <div class="container-fluid">
+                <div class="row tab-body">
+                    <div class="col-md-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div style="overflow-y:auto;width:100%;padding:2px;">
+                                        <div class="form-group" *ngIf="newTou!=true">
+                                            <label>Name</label>
+                                            <select [(ngModel)]="selectedName" class="effectiveDate form-control" (change)="changeTimeOfUseName()">
+                                                <option *ngFor="let name of timeOfUseNameList" [ngValue]="name.Name">{{name.Name}}</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group" *ngIf="newTou==true">
+                                            <label>Name</label>
+                                            <input type="text" class="form-control" [(ngModel)]="selectedName" required />
+                                        </div>
+                                        <table class="allDay" *ngIf="timeOfUseList && timeOfUseList.length>0">
+                                            <thead>
+                                                <tr class="header">
+                                                    <th class="firstCell">{{selectedName}}</th>
+                                                    <th>1</th>
+                                                    <th>2</th>
+                                                    <th>3</th>
+                                                    <th>4</th>
+                                                    <th>5</th>
+                                                    <th>6</th>
+                                                    <th>7</th>
+                                                    <th>8</th>
+                                                    <th>9</th>
+                                                    <th>10</th>
+                                                    <th>11</th>
+                                                    <th>12</th>
+                                                    <th>13</th>
+                                                    <th>14</th>
+                                                    <th>15</th>
+                                                    <th>16</th>
+                                                    <th>17</th>
+                                                    <th>18</th>
+                                                    <th>19</th>
+                                                    <th>20</th>
+                                                    <th>21</th>
+                                                    <th>22</th>
+                                                    <th>23</th>
+                                                    <th>24</th>
+                                                    <th>25</th>
+                                                    <th>26</th>
+                                                    <th>27</th>
+                                                    <th>28</th>
+                                                    <th>29</th>
+                                                    <th>30</th>
+                                                    <th>31</th>
+                                                    <th>32</th>
+                                                    <th>33</th>
+                                                    <th>34</th>
+                                                    <th>35</th>
+                                                    <th>36</th>
+                                                    <th>37</th>
+                                                    <th>38</th>
+                                                    <th>39</th>
+                                                    <th>40</th>
+                                                    <th>41</th>
+                                                    <th>42</th>
+                                                    <th>43</th>
+                                                    <th>44</th>
+                                                    <th>45</th>
+                                                    <th>46</th>
+                                                    <th>47</th>
+                                                    <th>48</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="data" *ngFor="let row of timeOfUseList;let i = index">
+                                                    <ng-container *ngIf="i!=editedRowIndex">
+                                                        <td> {{row.WeekDay}} </td>
+                                                        <td>{{row.Col1}}</td>
+                                                        <td>{{row.Col2}}</td>
+                                                        <td>{{row.Col3}}</td>
+                                                        <td>{{row.Col4}}</td>
+                                                        <td>{{row.Col5}}</td>
+                                                        <td>{{row.Col6}}</td>
+                                                        <td>{{row.Col7}}</td>
+                                                        <td>{{row.Col8}}</td>
+                                                        <td>{{row.Col9}}</td>
+                                                        <td>{{row.Col10}}</td>
+                                                        <td>{{row.Col11}}</td>
+                                                        <td>{{row.Col12}}</td>
+                                                        <td>{{row.Col13}}</td>
+                                                        <td>{{row.Col14}}</td>
+                                                        <td>{{row.Col15}}</td>
+                                                        <td>{{row.Col16}}</td>
+                                                        <td>{{row.Col17}}</td>
+                                                        <td>{{row.Col18}}</td>
+                                                        <td>{{row.Col19}}</td>
+                                                        <td>{{row.Col20}}</td>
+                                                        <td>{{row.Col21}}</td>
+                                                        <td>{{row.Col22}}</td>
+                                                        <td>{{row.Col23}}</td>
+                                                        <td>{{row.Col24}}</td>
+                                                        <td>{{row.Col25}}</td>
+                                                        <td>{{row.Col26}}</td>
+                                                        <td>{{row.Col27}}</td>
+                                                        <td>{{row.Col28}}</td>
+                                                        <td>{{row.Col29}}</td>
+                                                        <td>{{row.Col30}}</td>
+                                                        <td>{{row.Col31}}</td>
+                                                        <td>{{row.Col32}}</td>
+                                                        <td>{{row.Col33}}</td>
+                                                        <td>{{row.Col34}}</td>
+                                                        <td>{{row.Col35}}</td>
+                                                        <td>{{row.Col36}}</td>
+                                                        <td>{{row.Col37}}</td>
+                                                        <td>{{row.Col38}}</td>
+                                                        <td>{{row.Col39}}</td>
+                                                        <td>{{row.Col40}}</td>
+                                                        <td>{{row.Col41}}</td>
+                                                        <td>{{row.Col42}}</td>
+                                                        <td>{{row.Col43}}</td>
+                                                        <td>{{row.Col44}}</td>
+                                                        <td>{{row.Col45}}</td>
+                                                        <td>{{row.Col46}}</td>
+                                                        <td>{{row.Col47}}</td>
+                                                        <td>{{row.Col48}}</td>
+                                                        <td>
+                                                            <button type="button" (click)="edit(i)" style="border-width:0;background-color:transparent;cursor:pointer;">
+                                                                <i class="fa fa-pencil-square-o fa-lg text-danger"></i>
+                                                            </button>
+                                                        </td>
+                                                    </ng-container>
+                                                    <ng-container *ngIf="i==editedRowIndex">
+                                                        <td>{{row.WeekDay}}</td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col1"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col2"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col3"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col4"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col5"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col6"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col7"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col8"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col9"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col10"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col11"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col12"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col13"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col14"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col15"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col16"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col17"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col18"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col19"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col20"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col21"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col22"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col23"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col24"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col25"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col26"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col27"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col28"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col29"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col30"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col31"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col32"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col33"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col34"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col35"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col36"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col37"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col38"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col39"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col40"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col41"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col42"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col43"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col44"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col45"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col46"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col47"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <custom-switch [(value)]="row.Col48"></custom-switch>
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" (click)="edit(i)" style="border-width:0;background-color:transparent;cursor:pointer;">
+                                                                <i class="fa fa-pencil-square-o fa-lg" style="color: red;"></i>
+                                                            </button>
+                                                        </td>
+                                                    </ng-container>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn btn-dark btn-sm pull-right" style="margin-top:10px;min-width:150px;margin-left: 5px;" (click)="submit()">Submit</button>
+                                    <button type="button" class="btn btn-info btn-sm pull-right" style="margin-top:10px;min-width:150px;margin-left: 5px;" (click)="clearMatrix()">New</button>
+                                    <button type="button" class="btn btn-default btn-sm pull-right" style="margin-top:10px;min-width:150px;" (click)="copyMatrix()">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+</div>

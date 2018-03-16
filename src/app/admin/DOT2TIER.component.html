@@ -1,0 +1,106 @@
+<ng-container *ngIf="showing">
+        <div class="form-group bottom-margin-5">
+            <label>Previous EffectiveDates</label>
+            <select [(ngModel)]="selectedEffectiveDate" class="effectiveDate form-control" (change)="changeDOT2TIERSelectedEffectiveDate()">
+                    <option *ngFor="let effectiveDate of effectiveDates" [ngValue]="effectiveDate">{{effectiveDate}}</option>
+                </select>
+        </div>
+        <div class="form-group">
+            <label>Current EffectiveDate</label>
+            <div class="form-group">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8" style="padding-left: 0;">
+                            <div class="input-group">
+                                <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="newEffectiveDate" ngbDatepicker #d="ngbDatepicker"
+                                    required readonly/>
+                                <button class="input-group-addon" (click)="d.toggle()" type="button">
+                                                <i class="fa fa-calendar"></i>
+                                    </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="padding-left: 0;">
+                            <button type="button" class="btn btn-primary btn-sm pull-right btn-block" style="padding-top:7px;padding-bottom:6px;" (click)="clearMatrix()"
+                                [disabled]="clearMatrixDisable()">Create Map</button>
+                        </div>
+    
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div style="overflow-x: auto;height:370px;padding:1px;">
+            <table class="twoTier">
+                <thead>
+                    <tr class="header">
+                        <th class="firstCell"></th>
+                        <th colspan="2">3 mth</th>
+                        <th colspan="2">6 mth</th>
+                        <th colspan="2">12 mth</th>
+                        <th colspan="2">18 mth</th>
+                        <th colspan="2">24 mth</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="header">
+                        <td>DOT2TIER</td>
+                        <td>P</td>
+                        <td>OP</td>
+                        <td>P</td>
+                        <td>OP</td>
+                        <td>P</td>
+                        <td>OP</td>
+                        <td>P</td>
+                        <td>OP</td>
+                        <td>P</td>
+                        <td>OP</td>
+                        <td></td>
+                    </tr>
+                    <tr class="data" *ngFor="let row of DOT2TIERList; let i = index">
+                        <ng-container *ngIf="i!=editedRowIndexDOT2TIER">
+                            <td class="month-container">{{row.MonthString}} </td>
+                            <td>{{row.mth3P| number : '1.0-2'}}</td>
+                            <td>{{row.mth3OP| number : '1.0-2'}}</td>
+                            <td>{{row.mth6P| number : '1.0-2'}}</td>
+                            <td>{{row.mth6OP| number : '1.0-2'}}</td>
+                            <td>{{row.mth12P| number : '1.0-2'}}</td>
+                            <td>{{row.mth12OP| number : '1.0-2'}}</td>
+                            <td>{{row.mth18P| number : '1.0-2'}}</td>
+                            <td>{{row.mth18OP| number : '1.0-2'}}</td>
+                            <td>{{row.mth24P| number : '1.0-2'}}</td>
+                            <td>{{row.mth24OP| number : '1.0-2'}}</td>
+                            <td class="edit-btn">
+                                <button type="button" (click)="editDOT2TIER(i)" style="border-width:0;background-color:transparent;cursor:pointer;">
+                                            <i class="fa fa-pencil-square-o fa-lg text-danger"></i>
+                                        </button>
+                            </td>
+                        </ng-container>
+                        <ng-container *ngIf="i==editedRowIndexDOT2TIER">
+                            <td class="month-container"> {{row.MonthString}} </td>
+                            <td><input type="text" [(ngModel)]="row.mth3P" /></td>
+                            <td><input type="text" [(ngModel)]="row.mth3OP" /></td>
+                            <td><input type="text" [(ngModel)]="row.mth6P" /></td>
+                            <td><input type="text" [(ngModel)]="row.mth6OP" /></td>
+                            <td><input type="text" [(ngModel)]="row.mth12P" /></td>
+                            <td><input type="text" [(ngModel)]="row.mth12OP" /></td>
+                            <td><input type="text" [(ngModel)]="row.mth18P" /></td>
+                            <td><input type="text" [(ngModel)]="row.mth18OP" /></td>
+                            <td><input type="text" [(ngModel)]="row.mth24P" /></td>
+                            <td><input type="text" [(ngModel)]="row.mth24OP" /></td>
+                            <td class="edit-btn">
+                                <button type="button" (click)="editDOT2TIER(i)" style="border-width:0;background-color:transparent;cursor:pointer;">
+                                        <i class="fa fa-pencil-square-o fa-lg text-danger"></i>
+                                    </button>
+                            </td>
+                        </ng-container>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button type="button" class="btn btn-dark btn-sm pull-right" style="margin-top:10px;min-width:150px;margin-left:5px;" (click)="submitDOT2TIER()"
+            [disabled]="submitDOT2TIERDisable()">Submit</button>
+        <!-- <button type="button" class="btn btn-info btn-sm pull-right" style="margin-top:10px;min-width:150px;margin-left:5px;" (click)="copyDOT2TIER()"
+                [disabled]="copyDOT2TIERDisable()">Copy</button> -->
+    
+    </ng-container>

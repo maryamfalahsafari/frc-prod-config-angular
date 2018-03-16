@@ -1,0 +1,13 @@
+<ng-container *ngIf="selectedMonth && selectedYear">
+    <div *ngIf="disabled==false">
+        <select [(ngModel)]="selectedYear" (change)="changeYear()">
+        <option *ngFor="let year of years" [ngValue]="year">{{year.name}}</option>
+    </select>
+        <select [(ngModel)]="selectedMonth" (change)="changeMonth()">
+        <option *ngFor="let month of months" [ngValue]="month">{{month.name}}</option>
+    </select>
+    </div>
+    <div *ngIf="disabled==true">
+        {{selectedMonth.name}}-{{selectedYear.val}}
+    </div>
+</ng-container>

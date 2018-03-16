@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="FRCProductConfigurationWebAPI" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^E:\\Works\\CRM\\FRC\.ProductConfiguration\\FRC\.ProductConfiguration\.WebAPI\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^E:\\Works\\CRM\\FRC\.ProductConfiguration\\FRC\.ProductConfiguration\.WebAPI\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="ProductConfigurationDBContext-Web.config Connection String" description="" value="Password=Aa123456=;Persist Security Info=True;User ID=sa;Initial Catalog=ProductConfigurationDB;Data Source=." tags="">
+    <parameterEntry kind="XmlFile" scope="E:\\Works\\CRM\\FRC\.ProductConfiguration\\FRC\.ProductConfiguration\.WebAPI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ProductConfigurationDBContext']/@connectionString" />
+  </parameter>
+</parameters>

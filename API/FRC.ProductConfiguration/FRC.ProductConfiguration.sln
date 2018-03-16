@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FRC.ProductConfiguration.WebAPI", "FRC.ProductConfiguration.WebAPI\FRC.ProductConfiguration.WebAPI.csproj", "{CBCD03E6-815E-456A-B21E-71D42744BEB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FRC.ProductConfiguration.DataAccess", "FRC.ProductConfiguration.DataAccess\FRC.ProductConfiguration.DataAccess.csproj", "{140D398D-61F6-4CBD-9021-E6568AB36DDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FRC.ProductConfiguration.Entities", "FRC.ProductConfiguration.Entities\FRC.ProductConfiguration.Entities.csproj", "{7E62A2BE-7D91-49B0-BD04-7B0AE6273F08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBCD03E6-815E-456A-B21E-71D42744BEB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCD03E6-815E-456A-B21E-71D42744BEB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCD03E6-815E-456A-B21E-71D42744BEB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCD03E6-815E-456A-B21E-71D42744BEB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{140D398D-61F6-4CBD-9021-E6568AB36DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{140D398D-61F6-4CBD-9021-E6568AB36DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{140D398D-61F6-4CBD-9021-E6568AB36DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{140D398D-61F6-4CBD-9021-E6568AB36DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E62A2BE-7D91-49B0-BD04-7B0AE6273F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E62A2BE-7D91-49B0-BD04-7B0AE6273F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E62A2BE-7D91-49B0-BD04-7B0AE6273F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E62A2BE-7D91-49B0-BD04-7B0AE6273F08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://projectorca.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FRC.ProductConfiguration.WebAPI\\FRC.ProductConfiguration.WebAPI.csproj
+		SccProjectName1 = FRC.ProductConfiguration.WebAPI
+		SccLocalPath1 = FRC.ProductConfiguration.WebAPI
+		SccProjectUniqueName2 = FRC.ProductConfiguration.DataAccess\\FRC.ProductConfiguration.DataAccess.csproj
+		SccProjectName2 = FRC.ProductConfiguration.DataAccess
+		SccLocalPath2 = FRC.ProductConfiguration.DataAccess
+		SccProjectUniqueName3 = FRC.ProductConfiguration.Entities\\FRC.ProductConfiguration.Entities.csproj
+		SccProjectName3 = FRC.ProductConfiguration.Entities
+		SccLocalPath3 = FRC.ProductConfiguration.Entities
+	EndGlobalSection
+EndGlobal
